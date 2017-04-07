@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digital Clinical Home page</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap.min.js"></script>
+    <!--Custum CSS files-->
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <!--Custum JS files-->
+    <script src="js/home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid bgblack">
+            <div class="container p0 m0">
+                <div class="row mainHeader m0">
+                    <div class="col-md-12 p0 m0">
+                        <div class="col-md-9 p0 m0">
+                            <div class="navbar-logo">
+                                <a href="">
+                                    <img src="images/logo-accel-bar.blk@3x.png" height="100"  />
+                                </a>
+                            </div>
+							<div class="navbar-logo">
+                                <h2 class="infoTitle">Digital Clinical Protocol</h2>
+                            </div>
+                         </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- menu -->       
+	   <div class="container-fluid pd10">
+            <div class="row m0">
+                <div class="col-md-12 p0">
+                    <div class="menu col-md-10 p0">
+                        <ul>
+                            <li><a href="home.html"  class="active"><span>Home</span></a>
+                            </li>
+							 <li><a href="glossary.html"><span>Glossary</span></a>
+                            </li>
+                            <li><a href="competition.html"><span>Competitive Analysis</span></a>
+                            </li>
+							<li><a href="links.html"><span>Links</span></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    `	
+
+                </div>
+            </div>
+
+        </div>
+	<!-- here header ends -->	
+    </header>
+ 
+
+</body>
+
+</html>
+<!--For design-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+    function initialize() {
+        var mapProp = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 5,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>

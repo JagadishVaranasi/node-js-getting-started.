@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Clinical Home page</title>
@@ -17,11 +17,9 @@
     <link href="css/global.css" rel="stylesheet">
     <!--Custum JS files-->
     <script src="js/home.js"></script>
-
 </head>
-
 <body>
-  <header>
+    <header>
         <div class="container-fluid bgblack">
             <div class="container p0 m0">
                 <div class="row mainHeader m0">
@@ -48,13 +46,13 @@
                 <div class="col-md-12 p0">
                     <div class="menu col-md-10 p0">
                         <ul>
-                            <li><a href="/"  class="active"><span>Home</span></a>
+                            <li><a href="home.html"  class="active"><span>Home</span></a>
                             </li>
-							 <li><a href="/glossary.html"><span>Glossary</span></a>
+							 <li><a href="glossary.html"><span>Glossary</span></a>
                             </li>
-                            <li><a href="/competition.html"><span>Competitive Analysis</span></a>
+                            <li><a href="competition.html"><span>Competitive Analysis</span></a>
                             </li>
-							<li><a href="/links.html"><span>Links</span></a>
+							<li><a href="links.html"><span>Links</span></a>
                             </li>
                             
                         </ul>
@@ -68,20 +66,45 @@
         </div>
 	<!-- here header ends -->	
     </header>
- 
+     <h2 class="title"><i class="icons bacisDetailsIcon"></i> Lean Business Canvas</h2>
+	<img id="myImg" src="images/LBC1.jpg" height="500" width="1200"/>
+					<div id="myModal" class="modal">
+
+											  <!-- The Close Button -->
+											  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+											  <!-- Modal Content (The Image) -->
+											   <img  id="img01">
+
+											 
+											</div>					
+										
 
 </body>
-</html>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script>
-    function initialize() {
-        var mapProp = {
-            center: new google.maps.LatLng(51.508742, -0.120850),
-            zoom: 5,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
+</html>
+<!--For design-->
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	
+  
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>

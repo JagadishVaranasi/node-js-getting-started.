@@ -66,21 +66,45 @@
         </div>
 	<!-- here header ends -->	
     </header>
- 
+     <h2 class="title"><i class="icons bacisDetailsIcon"></i> Lean Business Canvas</h2>
+	<img id="myImg" src="images/LBC1.jpg" height="500" width="1200"/>
+					<div id="myModal" class="modal">
+
+											  <!-- The Close Button -->
+											  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+											  <!-- Modal Content (The Image) -->
+											   <img  id="img01">
+
+											 
+											</div>					
+										
 
 </body>
 
 </html>
 <!--For design-->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+
 <script>
-    function initialize() {
-        var mapProp = {
-            center: new google.maps.LatLng(51.508742, -0.120850),
-            zoom: 5,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	
+  
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
 </script>

@@ -80,6 +80,7 @@
                                 <tbody>
                                     <tr>
                                         <th>Industry Player</th>
+										<td width="18`%"><span style="font-weight:bold">BRANY (Biomedical Research Alliance of New York)</span></td>
 										 <td width="18`%"><span style="font-weight:bold">Medidata</span></td>
 										 <td width="18%"><span style="font-weight:bold">formedix</span></td>
 										 <td width="18%"><span style="font-weight:bold">Sylogent</span></td>
@@ -89,6 +90,10 @@
 									</tr>
 									<tr>
                                         <th>Product</th>
+										<td>
+										<a href="http://www.protocolbuilderpro.com/" target="_blank"><img src="images/protocolBuilder.jpg" height="24" width="135"/>
+										</a>
+										</td>
 										 <td>
 										<a href="https://www.mdsol.com/en/products/study-design-optimization" target="_blank"><img src="images/medidata-designer.png"/>
 										</a>
@@ -120,6 +125,9 @@
 										<tr>
 										<th>Description</th>
 										<td>
+											Protocol Builder helps improve the quality and consistency of clinical research protocols to make internal and IRB review processes more efficient 
+										</td>
+										<td>
                                         Protocol design solution that helps in study design & streamlining trial execution <br> through reuse of design information in downstream systems. 
 										</td>
 										<td>
@@ -145,11 +153,11 @@
 										NA
 										</td>
 										</tr>
-										<tr>
-										<th>Differentiators</th>
-										</tr>
+										
 										<tr>
 										<th>Clients</th>
+										<td>
+										</td>
 										<td>
 											GlaxoSmithKline plc
 									   </td>
@@ -170,16 +178,25 @@
 										<tr>
 										<th>Screen Shots</th>
 										<td>
+											<img id="myImg1" src="images/protocolBuilderSS.jpg" width="50" height="50">
+										  <!-- The Modal -->
+											<div id="myModal1" class="modal">
+											  <!-- The Close Button -->
+											  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+											  <!-- Modal Content (The Image) -->
+											   <img class="modal-content" id="img01">
+											</div>
+										</td>
+										<td>
 										<img id="myImg" src="images/designer1.png" width="50" height="50">
-									
-											<!-- The Modal -->
+										<!-- The Modal -->
 											<div id="myModal" class="modal">
 
 											  <!-- The Close Button -->
 											  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
 											  <!-- Modal Content (The Image) -->
-											   <img class="modal-content" id="img01">
+											   <img class="modal-content" id="img02">
 
 											  <!-- Modal Caption (Image Text) -->
 											  <div id="caption"></div>
@@ -218,18 +235,27 @@
 </html>
 <!--For design-->
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
 
+// Get the modal
+var modal = document.getElementById('myModal1');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+var img = document.getElementById('myImg1');
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+  }
+  
+  
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img02");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
